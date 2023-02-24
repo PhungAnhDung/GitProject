@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th><b>Caculator</b></th>
+        </tr>
+        <tr>
+            <td><input type="number" id="bang1"></td>
+            <td><input type="number" id="bang2"></td>
+        </tr>
+    </table>
+    <table>
+
+        <tr>
+            <td>
+                <button type="button" onclick="cong()">Addition(+)</button>
+
+            </td>
+            <td>
+                <button type="button" onclick="tru()">Subtraction(-)</button>
+            </td>
+            <td>
+                <button type="button" onclick="nhan()">Multiplication(X)</button>
+            </td>
+            <td>
+                <button type="button" onclick="chia()">Division(/)</button>
+            </td>
+        </tr>
+    </table>
+    <p id="result"></p>
+</form>
+<script>
+    function cong() {
+        let bang1 = parseFloat(document.getElementById("bang1").value);
+        let bang2 = parseFloat(document.getElementById("bang2").value);
+        let result = bang1 + bang2
+        document.getElementById("result").innerHTML = "result"  + result;
+    }
+</script>
+<script>
+    function tru() {
+        let bang1 = parseFloat(document.getElementById("bang1").value);
+        let bang2 = parseFloat(document.getElementById("bang2").value);
+        let result = bang1 - bang2
+        document.getElementById("result").innerHTML = "result"  + result;
+    }
+</script>
+<script>
+    function nhan() {
+        let bang1 = parseFloat(document.getElementById("bang1").value);
+        let bang2 = parseFloat(document.getElementById("bang2").value);
+        let result = bang1 * bang2
+        document.getElementById("result").innerHTML = "result"  + result;
+    }
+</script>
+<script>
+    function chia() {
+        let bang1 = parseFloat(document.getElementById("bang1").value);
+        let bang2 = parseFloat(document.getElementById("bang2").value);
+        let result = bang1 / bang2
+        document.getElementById("result").innerHTML = "result"  + result;
+    }
+</script>
+</body>
+</html>
